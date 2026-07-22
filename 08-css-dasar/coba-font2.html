@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coba CSS - Font Styling</title>
+</style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Geomini:wght@200..800&display=swap');
+
+    @font-face {
+      font-family: Geomini;
+      src: url('fonts/Geomini.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    h1{
+      color:crimson;
+      font-size: 60px;
+      text-align: center;
+      font-family: "Geomini", sans-serif;
+      font-weight: 300;
+    }
+
+    p{
+      color: navy;
+      text-align: center;
+      font-family: "Edu VIC WA NT Hand", cursive;
+      font-size: 18px;
+    }
+
+    .font_geo{
+      font-family: "Geomini", sans-serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, pariatur.</p>
+  <p class="font_geo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi quae neque. Eius asperiores assumenda, neque labore ullam distinctio possimus qui officiis dolores quaerat id rerum eum animi nihil itaque.</p>
+</body>
+</html>
