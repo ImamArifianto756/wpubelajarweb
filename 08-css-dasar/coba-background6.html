@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coba Background Attachment</title>
+  <style>
+    body{
+      text-align: center;
+      font-family: sans-serif;
+      background-color: #eee;
+      height: 2000px;
+    }
+
+    .kotak{
+      width: 400px;
+      height: 300px;
+      border: 10px solid #333;
+      margin: auto;
+      background-image: url(img/images.png);
+      background-size: 60px;
+      background-repeat: round;
+      overflow: auto;
+      background-attachment: fixed;
+    }
+
+    .content{
+      color: #fff;
+      line-height: 2;
+      background-color: rgba(0 0 0 / 70%);
+    }
+
+    p{
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>background attachment</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptas!</p>
+  <div class="kotak">
+    <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nisi.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam, dicta voluptates consequatur et fugiat esse voluptas iure quos natus! Dolore quibusdam culpa aliquam. Sunt at quos cumque recusandae earum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic dignissimos quo qui. Animi dolore excepturi, accusantium accusamus voluptatibus modi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos praesentium ex perspiciatis earum. Ducimus quaerat ut molestiae dicta est corrupti fuga sed tempora quam, commodi eveniet adipisci, officiis nostrum libero.</p>
+    </div>
+  </div>
+</body>
+</html>
