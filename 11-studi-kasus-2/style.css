@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* ===== Modern CSS Reset ===== */
+
+/* Gunakan border-box untuk semua elemen */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Hilangkan margin & padding bawaan browser */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font-size dasar & smoothing */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Elemen media responsif secara default */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Elemen form mewarisi font, bukan default browser */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Cegah teks overflow pada elemen panjang */
+p,
+h1,
+h2,
+h3{
+  font-family: 'Playfair Display', serif;
+}
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Hapus style bawaan list, tambahkan lagi manual jika perlu */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Link tidak otomatis berwarna/underline */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Tabel border-collapse */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Root stacking context untuk animasi antar-halaman / SPA */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Hormati preferensi user yang mengurangi animasi */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Batas Akhir Reset CSS */
+
+html{
+  background-color: #1a1a1a;
+}
+body{
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background-color: #f5f5ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header{
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+header h1{
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+header .gendre-tags{
+  margin-top: 10px; 
+}
+
+
+header .genre-tags .tag{
+  display: inline-block;
+  background-color: #06b6d4;
+  padding: 6px 16px;
+  margin: 0 5px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+main{
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main .profile-card{
+  background-color: white;
+  padding: 40px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  text-align: center;
+}
+
+main .profile-card .artist-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #06b6d4;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+main .profile-card .bio{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main .profile-card .bio p{
+  margin-bottom: 15px;
+}
+
+main .profile-card .stats{
+  margin-top: 30px;
+}
+
+main .profile-card .stats .stat-item{
+  display: inline-block;
+  width: 150px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #bdf5ff;
+}
+
+main .profile-card .stats .stat-item .stat-value{
+  font-size: 2em;
+  font-weight: bold;
+  color: #06b6d4;
+}
+
+main .profile-card .stats .stat-item .stat-label{
+  font-size: 0.9em;
+  color: #666;
+}
+
+main .discography{
+  margin: 50px 0;
+}
+
+main .discography h2, main .social-link h2{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+main .discography .album-list{
+  text-align: center;
+}
+ main .discography .album-list .album-card{
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+ }
+
+ main .discography .album-list .album-card img{
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-top: 10px;
+ }
+
+ main .discography .album-list .album-card h3{
+  font-size: 1.1em;
+  margin-bottom: 15px;
+
+ }
+main .discography .album-list .album-card p{
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+main .discography .album-list .album-card .btn-listen{
+  display: inline-block;
+  background-color: #06b6d4;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+main .discography .album-list .album-card .btn-listen:hover{
+  background-color: #07c7e9;
+}
+
+main .social-link{
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #06b6d4;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+main .social-link .social-btn{
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 12px 30px;
+  margin: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+main .social-link .social-btn:hover{
+  background-color: #333;
+}
+
+
+footer{
+  text-align: center;
+  padding: 30px;
+  background-color: #1a1a1a;
+  color: white;
+  margin-top: 50px;
+}
+
+footer .p{
+  margin-bottom: 10px;
+
+}
+
+footer .a{
+  color: #06b6d4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .a:hover{
+  text-decoration: underline;
+}
