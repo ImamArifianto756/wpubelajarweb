@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>WPU StreamFest 2026 - Neon
 Nights Music Festival </title>
 </head>
@@ -30,7 +33,7 @@ Nights Music Festival </title>
    <!-- 2. KONTEN UTAMA -->
    <main>
     <!-- 2.1 Hero Section -->
-     <section id="home" class="hero">
+     <section id="hero" class="hero">
       <h2>Neon Night Music Festival</h2>
       <h4>3 Days. 6 Indonesian Artists. Infinite Vibes.</h4>
       <p>June 15-17, 2026 | Jakarta International Expo</p>
@@ -50,9 +53,9 @@ Nights Music Festival </title>
       <!-- 2.3 LINEUP SECTION -->
       <section id="lineup">
         <h3>Lineup</h3>
-        <ul class="artist-list">
-          <li class="artis-card">
-            <figure class="artist-card-inner">
+        <ul>
+          <li>
+            <figure class="artist-card">
               <span class="day-badge">Day 1</span>
               <img src="assets/images/hindia.jpeg" alt="Hindia" width="200" class="artist-photo">
               <figcaption> 
@@ -63,7 +66,7 @@ Nights Music Festival </title>
             </figure>
           </li>
           <li>
-            <figure class="artist-card-inner">
+            <figure class="artist-card">
               <span class="day-badge">Day 1</span>
               <img src="assets/images/bernadya.jpeg" alt="Bernadya" width="200" class="artist-photo">
               <figcaption>
@@ -74,7 +77,7 @@ Nights Music Festival </title>
             </figure>
           </li>
           <li>
-            <figure class="artist-card-inner">
+            <figure class="artist-card">
               <span class="day-badge">Day 2</span>
               <img src="assets/images/pamungkas.jpeg" alt="Pamungkas" width="200" class="artist-photo">
               <figcaption>
@@ -85,7 +88,7 @@ Nights Music Festival </title>
             </figure>
           </li>
           <li>
-            <figure class="artist-card-inner">
+            <figure class="artist-card">
               <span class="day-badge">Day 2</span>
               <img src="assets/images/juicy_luicy.jpeg" alt="Juicy Luicy" width="200" class="artist-photo">
               <figcaption>
@@ -96,7 +99,7 @@ Nights Music Festival </title>
             </figure>
           </li>
           <li>
-            <figure class="artist-card-inner">
+            <figure class="artist-card">
               <span class="day-badge">Day 3</span>
               <img src="assets/images/nadin_amizah.jpeg" alt="Nadin Amizah" width="200" class="artist-photo">
               <figcaption>
@@ -107,7 +110,7 @@ Nights Music Festival </title>
             </figure>
           </li>
           <li>
-            <figure class="artist-card-inner">
+            <figure class="artist-card">
               <span class="day-badge">Day 3</span>
               <img src="assets/images/feast.jpeg" alt="Feast" width="200" class="artist-photo">
               <figcaption>
@@ -226,22 +229,24 @@ Nights Music Festival </title>
         <section id="tickets">
           <h3>Get Your Tickets</h3>
           <form>
-            <label for="fullname">Full Name:</label> <br>
+            <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname" required autofocus autocomplete="off">
-            <br>
-            <label for="email">Email:</label> <br>
+            <div>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required autofocus autocomplete="off">
-            <br>
-            <label for="ticket-category">Ticket Category:</label> <br>
-            <select id="ticket-category" name="ticket_category" required>
-              <option value="regular">Regular (Rp. 500.000)</option>
-              <option value="vip">VIP (Rp. 1.500.000)</option>
-              <option value="vvip">VVIP (Rp. 3.000.000)</option>
-            </select>
-            <br>
-            <label for="quatity">Quatity:</label> <br>
-            <input type="number" id="quatity" name="quatity" min="1" max="10" value="1">
-            <br> 
+            </div>
+            <div>
+              <label for="ticket-category">Ticket Category (3 Days Pass)</label> 
+              <select id="ticket-category" name="ticket_category" required>
+                <option value="regular">Regular (Rp. 500.000)</option>
+                <option value="vip">VIP (Rp. 1.500.000)</option>
+                <option value="vvip">VVIP (Rp. 3.000.000)</option>
+              </select>
+            </div>
+            <div>
+            <label for="quatity">Quatity:</label>
+            <input type="number" id="quatity" name="quatity" min="1" max="10" value="1" required>
+            </div>
             <button type="submit">Book Now</button>
           </form>
         </section>
@@ -249,26 +254,26 @@ Nights Music Festival </title>
         <!-- 2.6 GALLERY SECTION -->
          <section id="gallery">
           <h3>Festival Highlights 2025</h3>
-          <ul class="gallery-list"> 
-            <li class="gallery-item">
+          <ul> 
+            <li>
               <figure>
                 <img src="assets/images/gallery/crowd_vibes.jpeg" alt="Crowd Vibes" width="300" class="gallery-photo">
                 <figcaption>Crowd Vibes at Main Stage</figcaption>
               </figure>
             </li>
-            <li class="gallery-item">
+            <li>
               <figure>
                 <img src="assets/images/gallery/neon_installation.png" alt="Neon Installation" width="300">
                 <figcaption>Neon Installation</figcaption>
               </figure>
             </li>
-            <li class="gallery-item">
+            <li>
               <figure>
                 <img src="assets/images/gallery/food_court.png" alt="Food Court" width="300">
                 <figcaption>Food Court at Festival</figcaption>
               </figure>
             </li>
-            <li class="gallery-item">
+            <li>
               <figure>
                 <img src="assets/images/gallery/sunset_performance.png" alt="Sunset Performance" width="300">
                 <figcaption>Sunset Performance</figcaption>
@@ -304,6 +309,8 @@ Nights Music Festival </title>
       </p>
       <p>Contact: <a href="mailto:hello@wpu_streamfest.com">hello@wpu_streamfest.com</a></p>
     </footer>
+
+    <a href="#tickets" class="floating-ticket-btn">Buy Tickets</a>
 
 
 </body>
